@@ -51,7 +51,7 @@ img{
         grid-template-columns: repeat(2, 1fr);        
     }
 
-    .grid img {
+    .grid figure {
         border-radius: 50%;
     }
 
@@ -62,7 +62,7 @@ img{
 
 /* arrange images in 2 columns, remove the round shape and make every third image span both columns */
 @media screen and (min-width: 992px) {    
-    .grid img {
+    .grid figure {
         border-radius: 0%;       
     }
 
