@@ -38,9 +38,10 @@ img{
     display: grid;   
     grid-template-columns: 95%; 
     justify-content: space-evenly;
-    gap: 10px;
-     
+    gap: 10px;     
 }
+
+
 
 /* arrange images in 2 columns with a round shape and make last image span both columns */
 @media screen and (min-width: 772px) {
@@ -77,14 +78,19 @@ img{
 
 /* select different styles for dark mode */
 @media screen and (min-width: 992px) and (prefers-color-scheme: dark) {
-    img{
-    border: 10px ridge black;            
+    img{    
+    border-color: black;
+    border-style:solid;
+    border-width: 10px;                   
   }
-  body {    
+  .grid figure {    
     color: white;
-    background-color: rgb(11, 26, 26);
-    
+    background-color: rgb(11, 26, 26); 
+         
   }
+
+  
+  
 
   
 }
