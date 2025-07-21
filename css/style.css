@@ -41,7 +41,9 @@ img{
     gap: 10px;     
 }
 
-
+.grid figure {    
+    text-align: center;    
+}
 
 /* arrange images in 2 columns with a round shape and make last image span both columns */
 @media screen and (min-width: 772px) {
@@ -87,7 +89,7 @@ img{
     border-color: black;
     border-style:solid;
     border-width: 10px; 
-    text-align: center;            
+               
   }
 
   
