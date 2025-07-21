@@ -1,0 +1,90 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #dedede;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family:Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin-top: 20px;
+}
+
+img{
+    border: 5px solid blue;
+    border-radius: 35px;
+    width: 100%;
+  }
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid {
+    display: grid;   
+    grid-template-columns: 95%; 
+    justify-content: space-evenly;
+    gap: 10px;
+     
+}
+
+/* arrange images in 2 columns with a round shape and make last image span both columns */
+@media screen and (min-width: 772px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);        
+    }
+
+    .grid img {
+        border-radius: 50%;
+    }
+
+    .grid figure:last-child {       
+        grid-column: 1 / span 2;
+    }
+}
+
+/* arrange images in 2 columns, remove the round shape and make every third image span both columns */
+@media screen and (min-width: 992px) {    
+    .grid img {
+        border-radius: 0%;
+    }
+
+    .grid figure:nth-child(3n) {       
+        grid-column: 1 / span 2;
+    }
+}
+
+/* remove the scrolling when the user has appropriate settings */
+@media screen and (min-width: 992px) and (prefers-reduced-motion: reduce) {    
+    .grid img {        
+        border-radius: 0%;
+    }
+}
+
+/* select different styles for dark mode */
+@media screen and (min-width: 992px) and (prefers-color-scheme: dark) {
+    img{
+    border: 10px ridge black;            
+  }
+  body {    
+    color: white;
+    background-color: rgb(11, 26, 26);
+    
+  }
+
+  
+}
