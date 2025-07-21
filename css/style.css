@@ -86,7 +86,8 @@ img{
     background-color: rgb(11, 26, 26);   
     border-color: black;
     border-style:solid;
-    border-width: 10px;             
+    border-width: 10px; 
+    text-align: center;            
   }
 
   
